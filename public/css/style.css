@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Sen', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.centered {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#search-section {
+  margin-bottom: 20px;
+  background-image: url("/public/img/wallpaper-doctor.jpg");
+  height: 300px;
+  position: relative;
+}
+
+#search-section--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#search-section--container i {
+  margin-top: 10px;
+  text-align: center;
+  display: inherit;
+  color: white;
+}
+
+#search-section #search-form {
+  width: 100%;
+  padding: 15px;
+  font-size: inherit;
+  outline: none;
+  border: 1px solid #eeeeee;
+  display: block;
+  font-size: 30px;
+}
+
+#heading {
+  margin-bottom: 20px;
+}
+
+#heading h1 {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+#list-country {
+  margin: 0 auto;
+}
+
+#list-country--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#list-country--container li {
+  width: 31%;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 3%;
+}
+
+#list-country--container li h2 {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#list-country--container li .description-data div {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#list-country--container li .description-data div img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+}
+
+#list-country--container li .description-data div p {
+  margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+  .centered {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  #list-country--container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #list-country--container li {
+    width: 45%;
+    margin-bottom: 5%;
+  }
+}

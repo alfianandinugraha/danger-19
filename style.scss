@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.centered {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#search-section {
+    margin-bottom: 20px;
+    background-image: url('/public/img/wallpaper-doctor.jpg');
+    height: 300px;
+    position: relative;
+
+    &--container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i{
+            margin-top: 10px;
+            text-align:center;
+            display: inherit;
+            color: white;
+        }
+    }
+
+    #search-form {
+        width: 100%;
+        padding: 15px;
+        font-size: inherit;
+        outline: none;
+        border: 1px solid #eeeeee;
+        display: block;
+        font-size: 30px
+    }
+}
+
+#heading {
+    margin-bottom: 20px;
+
+    h1 {
+        text-align: center;
+        font-size: 70px;
+        color: white;
+    }
+}
+
+#list-country {
+    margin: 0 auto;
+
+    &--container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 31%;
+            padding: 10px;
+            border: 1px solid #eeeeee;
+            margin-bottom: 3%;
+
+            h2 {
+                border-bottom: 1px solid #eeeeee;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
+
+            .description-data {
+                div {
+                    position: relative;
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        position: absolute;
+                    }
+
+                    p {
+                        margin-left: 30px;
+                        // display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .centered{
+        width: 100%;
+    }
+}
+
+@media(max-width: 620px){
+    #list-country{
+        &--container{
+            justify-content: space-around;
+            li{
+                width: 45%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
