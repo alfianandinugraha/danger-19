@@ -17,7 +17,7 @@ li {
 
 #search-section {
   margin-bottom: 20px;
-  background-image: url("/public/img/wallpaper-doctor.jpg");
+  background-image: url("https://raw.githubusercontent.com/alfianandinugraha/danger-19/master/public/img/wallpaper-doctor.jpg");
   height: 300px;
   position: relative;
 }
